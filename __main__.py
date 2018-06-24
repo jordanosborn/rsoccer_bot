@@ -36,7 +36,7 @@ class CommentChain:
 
 submissions = set()
 submissions_to_check = set([])
-valid_urls = ['streamja.com', 'streamable.com', 'streamgoals.com']
+valid_urls = ['streamja.com', 'streamable.com', 'streamgoals.com', 'clippituser.tv']
 
 def string_contains(string):
     #country names player names etc.
