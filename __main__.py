@@ -4,8 +4,6 @@ from multiprocessing import Pool
 import sys
 import bs4
 import requests
-from nltk.tokenize import word_tokenize
-import pandas
 from time import sleep
 import re
 from urllib.parse import urlsplit
@@ -45,7 +43,7 @@ def string_contains(string):
     )
     out = keyword_regex.findall(string)
 
-    return True if len(out) != 0 else False
+    return len(out) != 0
 
 def url_valid(url):
     #country names player names etc.
